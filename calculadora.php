@@ -2,7 +2,7 @@
  
   $a = "5";
   $b = "7";
- $operador = "*";
+ $operador = "/";
  $resultado = "0";
  
  if ($operador == "+") {
