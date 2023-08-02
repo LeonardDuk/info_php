@@ -29,4 +29,9 @@ if ($operador == "perc") {
     $resultado = $a-($a * $b) / 100;
                   
 }
+
+if ($operador == "perc") {
+    $resultado = $a+($a * $b) / 100;
+                  
+}
 echo $resultado; 
