@@ -1,6 +1,6 @@
 <?php
       $Entrada = 4;
-//    |  Saída = 4 X 0 =0...4 X 10 = 40.:;
+//    |  Saída = 4 X 0 =0...4 X 10 = 40. 
 
       $numero =9;
       while ($numero <=10)
