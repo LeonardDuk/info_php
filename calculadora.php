@@ -38,4 +38,15 @@ if ($operador == "perc") {
 if ( $operador == "ma") {
     $resultado = ($a + $b)/2 ;
 } 
-echo $resultado; 
+
+ $a = 0;
+ while ($a <= 10) 
+ {
+    echo "Está e a $a interação do nosso loop de teste. <br>";
+    $a++;
+ }
+   
+ for ($a; $a<=10; $a++)
+ {
+   echo "Está e a $a interação do nosso loop de teste. <br>";
+}
