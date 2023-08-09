@@ -2,7 +2,7 @@
  
   $a = "2";
   $b = "4";
- $operador = "ma";
+ $operador = "mp";
  $resultado = "0";
  
  if ($operador == "+") {
@@ -50,3 +50,5 @@ if ( $operador == "ma") {
  {
    echo "Está e a $a interação do nosso loop de teste. <br>";
 }
+
+
