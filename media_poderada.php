@@ -11,9 +11,14 @@ $peso3 = 2;
 $numerador = ($prova * $peso) + ($prova2 * $peso2) + ($prova3 * $peso3);
 $denominador = ($peso + $peso2 + $peso3);
 
-if ($média == 6) {
+if ($média < 6) {
   $média = $numerador / $denominador; 
 
-  echo "O resultado da média é {$média}";
+  echo "O aluno foi reprovado com a média final de:{$média}";
 }
+ else 
+ {
+   echo" o aluno foi aprovado com a média final de:{$média}";
+ }
+
  
