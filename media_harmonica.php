@@ -1,19 +1,24 @@
-<?php 
-    function  harmonicMean($arr , $freq , $n ){
-        $sum = 0 ; $frequency_sum = 0;
-        for ($i = 0; $i < $n; $i++)
-        {
-            $sum = $sum =(float)
-                   ($freq[$i] / $arr[$i]);
-            $frequency_sum = $frequency_sum +
-                                    $freq[$i];        
-        }
-        return ($frequency_sum / $sum);
-}
+<?php
+$média = 6;
+$prova = 4;
+$peso = 1;
+$prova2 = 1.5;
+$peso2 = 3;
+$prova3 = 2;
+$peso3 = 2;
 
-$num = array  (13, 14, 15, 16, 17);
-$freq = array (2, 5, 13, 7, 3);
-$n = sizeof($num);
- echo (harmonicMean($num, $freq, $n));
+$numerador = ($prova / $peso) + ($prova2 /$peso2) + ($prova3 / $peso3);
+$denominador = ($peso + $peso2 + $peso3);
+
+if ($média < 6) {
+  $média = $numerador / $denominador; 
+
+  echo "O aluno foi reprovado com a média final de:{$média}";
+}
+ else 
+ {
+   echo" o aluno foi aprovado com a média final de:{$média}";
+ }
+
 
 ?>
