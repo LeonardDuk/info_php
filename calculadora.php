@@ -50,5 +50,4 @@ if ( $operador == "ma") {
  {
    echo "Está e a $a interação do nosso loop de teste. <br>";
 }
-
-
+//teste
