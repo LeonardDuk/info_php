@@ -1,5 +1,7 @@
 <?php 
-
+$value1 = 20;
+$value2 = 30;
+$operador = "+";
  function soma($value1,$value2){
     
     if ($value1 == 0){
