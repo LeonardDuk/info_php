@@ -1,6 +1,6 @@
 <?php
 
-$dataString = "32/05/1990";
+$dataString = "29/02/1990";
 $data = explode("/", $dataString);
 $dia = $data[0];
 $mês = $data[1];
@@ -41,4 +41,13 @@ $ano = $data[2];
             $mês -= 1;
     
 }
+$dataString ="{$dia}/{$mês}/{$ano}";
 
+if (($ano % 4 == 0) && ($ano % 100 != 0 || $ano %400 == 0)) {
+    echo "$dataString é bissexto";
+} 
+else{ 
+    echo "$dataString não é bissexto";
+}    
+
+    
