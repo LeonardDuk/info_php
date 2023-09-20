@@ -5,14 +5,14 @@
 $numeros = [10 , 80, 5 , 14 ,90 , 29, 99 , 1 , 122];
 $n = count($numeros);
 
- for ( $contador  =0; $contador < $n ; $contador++) {
-    if($contador==0){
+ for ( $i =0; $i < $n ; $i++) {
+    if($i==0){
         $maior = $numeros[0];
     }
     else {
-       if ($numeros[$contador] > $maior){
+       if ($numeros[$i] > $maior){
         
-      $maior = $numeros[$contador];
+      $maior = $numeros[$i];
        } 
     }
    
