@@ -18,3 +18,10 @@ $n = count($numeros);
    
  }
 echo "maior número é : {$maior}";
+
+
+/*
+2-) Por meio de tecnica de ordenação bubble sort, ordene o array abaixo em ordem cresecente.
+Dica: Utilize o laço de repetição FOR, pode ser necessario mais de um e também deve ser utilizado um if.
+*/
+$numeros = [34,12,98,45,23,67,8];
