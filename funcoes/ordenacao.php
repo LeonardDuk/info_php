@@ -25,3 +25,18 @@ echo "maior número é : {$maior}";
 Dica: Utilize o laço de repetição FOR, pode ser necessario mais de um e também deve ser utilizado um if.
 */
 $numeros = [34,12,98,45,23,67,8];
+function bubble_sort($numeros){
+   $n = count($numeros)-1;
+   for ($i=0; $i<$n; $i++) {
+      for ($j=0; $j<$n-$i; $j++) {
+          $k = $j+1;
+          if ($numeros[$k] < $numeros[$j]) {
+              list($numeros[$j], $numeros[$k]) = array($numeros[$k], $numeros[$j]);
+          }
+      }
+  }
+  return $numeros;
+}
+
+
+
