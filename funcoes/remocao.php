@@ -21,7 +21,7 @@ $n = count($frutas);
 $newfrutas = [];
 for ($i = 0 ; $i < $n; $i++){
     $fruta = $frutas[$i];
-       if (!isset($newfruta[$fruta])){
+       if (!isset($newfrutas[$fruta])){
      $newfrutas[$fruta] = 1 ;
     }
     else {
