@@ -30,8 +30,6 @@ for ($i = 0 ; $i < $n; $i++){
     if (!in_array($frutas[$i], $newfrutas)){
              array_push($newfrutas , $frutas[$i]);
             }
-             else {
-               
 }
-}
+
  echo implode ("," , $newfrutas);
