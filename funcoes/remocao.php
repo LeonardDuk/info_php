@@ -27,6 +27,11 @@ for ($i = 0 ; $i < $n; $i++){
     else {
         $newfrutas[$fruta] += 1;
     }
+    if (!in_array($frutas[$i], $newfrutas)){
+             array_push($newfrutas , $frutas[$i]);
+            }
+             else {
+               
 }
-
+}
  echo implode ("," , $newfrutas);
