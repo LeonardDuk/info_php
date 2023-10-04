@@ -63,7 +63,7 @@ foreach ($newfrutas as $fruta => $value) {
 function ordencao($newfrutas, $ordem = "asc") {
 
     if ($ordem == "asc") {
-
+      arsort($newfrutas);
     } else {
         rsort($newfrutas);
     }
@@ -71,8 +71,8 @@ function ordencao($newfrutas, $ordem = "asc") {
     return $newfrutas;
 }
 
-$ordem ="desc";
-$frutas = ordenacao($newfrutas, $ordem);
+$ordem ="asc";
+
 
 foreach ($frutas as $i => $value) {
     echo "{$i} {$value} <br>";
