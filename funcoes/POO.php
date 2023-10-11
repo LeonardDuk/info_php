@@ -1,4 +1,4 @@
-<?php
+ <?php
 $cor = "branco";
 $altura = 1.75 ;   
 $peso = 62 ; 
@@ -37,4 +37,4 @@ $pessoa->andar();
 echo "<br>";
 $pessoa->parar();
 echo "<br>";
-$pessoa->caracteristicas();
+$pessoa->caracteristicas(); 
