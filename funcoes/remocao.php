@@ -57,7 +57,7 @@
 }
 
 foreach ($newfrutas as $fruta => $value) {
-    echo "{$fruta} {$value}<br>";
+   // echo "{$fruta} {$value}<br>";
 }
 
 function ordencao($newfrutas, $ordem = "asc") {
