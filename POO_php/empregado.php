@@ -6,80 +6,48 @@
  * Implementar a classe tercerizado 
  * Implementar a classe Folha de Pagamento
  */
-interface IRemuneravel {
-    public function faturar( IRemuneravel $dinheiro);
+interface Remuneravel {
+    public function faturar();
 }
 
-class Estagiario{
-    public IRemuneravel  $dinheiro;
-
-    public function faturar(IRemuneravel $dinheiro) {
-        $this->remuneravel= $dinheiro;
+class Estagiario implements Remuneravel {
+    public  $salario = 1000 ;
+    public function faturar() {
+        $this->salario *= 2;
     }
 
+    
+}
+
+class Empregadoclt implements  Remuneravel{
+    public  $salario = 1000 ;
+    public function faturar() {
+        $this->salario *= 2;
+    }
+    
+}
+
+class Tercerizado  implements  Remuneravel{
+    public  $salario = 1000 ;
+    public function faturar() {
+        $this->salario *= 2;
+    }
+}
+class FolhaDePagamento {
+    public Remuneravel $salario ;
+
+    public function pagar(Remuneravel $salario){ 
+        $this->salario= $salario;
+        $this->salario->faturar();
+      
+    }
     public function __toString() {
-        echo $this->remuneravel;
+        return "O salário é :{$this->salario->salario}<br>";
     }
 }
-
-class Empregadoclt implements  IRemuneravel{
-    public $dinheiro;
-    public $faturamento;
-
-    public function faturar(IRemuneravel $dinheiro) {
-        $this->dinheiro = $dinheiro;
-        echo "estou recebendo o ... {$this->dinheiro}<br>";
-    }
-    
-    public function setFaturamento(IRemuneravel $faturamento) {
-        $this->faturamento = $faturamento;
-        echo "o faturamento é... {$this->faturamento}<br>";
-    }
-    
-}
-
-class Tercerizado  implements  IRemuneravel{
-    public $dinheiro ;
-
-    public function faturar(IRemuneravel $dinheiro) {
-        $this->dinheiro = $dinheiro;
-        echo "estou recebendo o ... {$this->dinheiro}<br>";
-    }
-}
-
-class folhadepagamento implements  IRemuneravel{
-    public $dinheiro ;
-
-    public function faturar(IRemuneravel $dinheiro) {
-        $this->dinheiro = $dinheiro;
-        $remuneracao = $this->verificarAremuneracao();
-        echo "estou recebendo o ... {$this->dinheiro}<br>" . $remuneracao;
-    }
-
-    public function verificarAremuneracao() {
-        return "o recebimento das verbas  está ok !<br>";
-    }
-
-}
-
-
-
-
-$dinheiro  = "17000";
 
 $estagiario = new Estagiario();
-$estagiario->faturar($dinheiro);
-$estagiario-setFaturamento("17000");
 
-$empregoclt = new Empregoclt();
-$empregoclt->faturar("17000");
-
-
-$tecerizado = new Tercerizado();
-$tecerizado->faturar($dinheiro);
-
-$folhadepagamento = new Folhadepagemento();
-$tecerizado->faturar($dinheiro);
-
- $remuneravel= new Remuneravel();
-echo $remuneravel->faturar($tecerizado);
+$folha = new FolhaDePagamento();
+$folha->pagar($estagiario);
+echo "{$folha}";
